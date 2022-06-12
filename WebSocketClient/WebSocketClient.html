@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebSocket JavaScript Client</title>
+  </head>
+  <body>
+    <h1>WebSocket Javascript Client</h1>
+    <p id="stateLabel">Ready to connect</p>
+    <p>Connection ID: <span id="connectionId"></span></p>
+    <div>
+      <label for="connectionUrl">WebSocket Server URL:</label>
+      <input id="connectionUrl" />
+      <button id="startConnection" type="submit">Connect</button>
+      <button id="closeConnection" disabled>Close Socket</button>
+    </div>
+    <p />
+    <div>
+      <label for="message">Message:</label>
+      <input id="message" disabled />
+      <button id="sendMessage" type="submit" disabled>Send</button>
+    </div>
+    <p />
+    <div>
+      <label for="receiver">Receiver ID:</label>
+      <input id="receiver" disabled />
+    </div>
+    <p />
+    <h2>Message Log</h2>
+    <table style="width: 50vw">
+      <thead>
+        <tr>
+          <td style="width: 25vw">From</td>
+          <td style="width: 25vw">To</td>
+        </tr>
+      </thead>
+      <tbody id="messageLog"></tbody>
+    </table>
+    <p />
+  </body>
+</html>
